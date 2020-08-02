@@ -31,13 +31,12 @@ void student::getDetails(void){
  
 //member function definition, outside of the class
 void student::putDetails(void){
-    cout << "Student details:\n";
     cout << "Name:"<< name << ",Roll Number:" << rollNo << ",Total:" << total << ",Percentage:" << perc;
 }
- 
+
 int main()
 {
-    student std[MAX];       //array of objects creation
+    student students[MAX];       //array of objects creation
     int n,loop;
      
     cout << "Enter total number of students: ";
@@ -45,14 +44,11 @@ int main()
      
     for(loop=0;loop< n; loop++){
         cout << "Enter details of student " << loop+1 << ":\n";
-        std[loop].getDetails();
-    }
-     
-    cout << endl;
-     
+        students[loop].getDetails();
+    } 
     for(loop=0;loop< n; loop++){
-        cout << "Details of student " << (loop+1) << ":\n";
-        std[loop].putDetails();
+        cout <<endl<< "Details of student " << (loop+1) << ":\n";
+        students[loop].putDetails();
     }
      
     return 0;
