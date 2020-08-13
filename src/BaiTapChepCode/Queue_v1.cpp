@@ -6,7 +6,6 @@
 #include<stdlib.h>
 #define MAX_SIZE 100
 using namespace std;
-void insert
 int main() {
     int item, choice, i;
     int arr_queue[MAX_SIZE];
