@@ -15,7 +15,6 @@ class Array{
         void insert(int element, int index);
         void deleteAtIndex(int index);
         void append(int *other);
-
 };
 Array::Array(){
     elements = NULL;
@@ -64,10 +63,9 @@ void Array::pop(){
     else
     {
         int *temp;
-        //viet tiep di em nhe
         temp= new int[size];
         for( int i=0;i<size;i++){
-            *(temp+i)=*(elements+i);// *(a+i) = a[i];
+            *(temp+i)=*(elements+i);
         }
         delete[] elements;
         elements = new int[size-1];
