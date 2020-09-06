@@ -31,6 +31,7 @@ int main()
 {  
     Person person1;
     Person t1, t2;  
+    Person t3;
     t2 = t1;  
     Person t3 = t1;  
     getchar();  
